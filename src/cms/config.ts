@@ -3,7 +3,7 @@ export default {
   backend: {
     name: 'github',
     repo: 'arlaptiev/pony-design-studio-clone',
-    branch: 'master',
+    branch: 'main',
   },
   media_folder: 'public/img',
   public_folder: 'img',
