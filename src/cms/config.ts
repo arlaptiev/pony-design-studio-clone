@@ -1,8 +1,7 @@
 export default {
   cms_manual_init: true,
   backend: {
-    name: 'github',
-    repo: 'arlaptiev/pony-design-studio-clone',
+    name: 'git-gateway',
     branch: 'main',
   },
   media_folder: 'public/img',
