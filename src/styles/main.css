@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "neuzeit-grotesk";
+  src: url("/assets/fonts/Neuzeit Grotesk Regular.woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "itc-avant-garde-gothic-pro";
+  src: url("/assets/fonts/ITC Avant Garde Pro Bold.woff") format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+}
+
+body {
+  font-family: "neuzeit-grotesk", sans-serif;
+}
+
+a {
+  @apply text-blue-700;
+}
+
+a:hover {
+  @apply border-b-2 border-blue-700;
+}
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
