@@ -1,9 +1,9 @@
-import BlogSection from 'components/sections/Home/BlogSection';
-import FeatureSection from 'components/sections/Home/FeatureSection';
+// import BlogSection from 'components/sections/Home/BlogSection';
+// import FeatureSection from 'components/sections/Home/FeatureSection';
+// import PricingSection from 'components/sections/Home/PricingSection';
+// import StepsSection from 'components/sections/Home/StepsSection';
+// import TeamSection from 'components/sections/Home/TeamSection';
 import HeroSection from 'components/sections/Home/HeroSection';
-import PricingSection from 'components/sections/Home/PricingSection';
-import StepsSection from 'components/sections/Home/StepsSection';
-import TeamSection from 'components/sections/Home/TeamSection';
 import { HomeAttributes } from 'interfaces/home';
 
 interface Props {
@@ -12,15 +12,12 @@ interface Props {
 
 const Home = (props: Props) => {
   const { attributes } = props;
+  // eslint-disable-next-line no-console
+  console.log('🚀 ~ file: Home.tsx ~ line 15 ~ Home ~ attributes', attributes);
   return (
     <>
-      <HeroSection
-        version={attributes.hero_version}
-        title={attributes.hero_title}
-        description={attributes.hero_description}
-        image={attributes.hero_image}
-      />
-      <FeatureSection
+      <HeroSection />
+      {/* <FeatureSection
         version={attributes.feature_version}
         title={attributes.feature_title}
         description={attributes.feature_description}
@@ -47,9 +44,9 @@ const Home = (props: Props) => {
         title={attributes.blog_title}
         description={attributes.blog_description}
         slugs={attributes.posts}
-      />
+      /> */}
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
