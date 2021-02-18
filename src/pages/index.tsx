@@ -12,9 +12,7 @@ interface Props {
 
 const HomePage: NextPage<Props> = ({ HomeAttributes, FooterAttributes }) => (
   <>
-    <DefaultLayout
-      meta={<Meta />}
-    >
+    <DefaultLayout meta={<Meta />} FooterAttributes={FooterAttributes}>
       <Home attributes={HomeAttributes} />
     </DefaultLayout>
   </>

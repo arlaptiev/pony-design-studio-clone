@@ -1,11 +1,10 @@
 import React, { ReactNode } from 'react';
 
-import Footer from 'components/sections/Footer';
-import Header from 'components/sections/Header';
-
 type Props = {
   meta: ReactNode;
   children: ReactNode;
+  // eslint-disable-next-line react/no-unused-prop-types
+  FooterAttributes: any;
 };
 
 const DefaultLayout = (props: Props) => (
@@ -13,7 +12,7 @@ const DefaultLayout = (props: Props) => (
     {/* <Header /> */}
     {props.meta}
     {props.children}
-    {/* <Footer /> */}
+    {/* <Footer attributes={FooterAttributes}/> */}
   </>
 );
 
