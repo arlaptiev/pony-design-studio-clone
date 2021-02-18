@@ -4,7 +4,7 @@ type Props = {
   meta: ReactNode;
   children: ReactNode;
   // eslint-disable-next-line react/no-unused-prop-types
-  FooterAttributes: any;
+  FooterAttributes?: any;
 };
 
 const DefaultLayout = (props: Props) => (
