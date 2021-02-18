@@ -1,6 +1,7 @@
+import React, { ReactNode } from 'react';
+
 import Footer from 'components/sections/Footer';
 import Header from 'components/sections/Header';
-import React, { ReactNode } from 'react';
 
 type Props = {
   meta: ReactNode;
@@ -9,10 +10,10 @@ type Props = {
 
 const DefaultLayout = (props: Props) => (
   <>
-    <Header />
+    {/* <Header /> */}
     {props.meta}
     {props.children}
-    <Footer />
+    {/* <Footer /> */}
   </>
 );
 

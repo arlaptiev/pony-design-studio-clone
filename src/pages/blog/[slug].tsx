@@ -1,14 +1,14 @@
+import React from 'react';
+
 import PostLayout from 'components/layouts/PostLayout';
-import Post from 'components/templates/Post';
-import { PostAttributes } from 'components/templates/Post'
+import Post, { PostAttributes } from 'components/templates/Post';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import Head from 'next/head';
-import React from 'react';
 import { Meta } from 'utils/Meta';
 
 interface Props {
-  content: { 
-    attributes: PostAttributes 
+  content: {
+    attributes: PostAttributes
     html: string;
   };
 }
@@ -19,14 +19,10 @@ const BlogDetailPage: React.FC<Props> = ({ content }) => {
   return (
     <>
       <PostLayout
-      meta={<Meta title={title} description={description} image={{url: image}}/>}
+        meta={<Meta title={title} description={description} image={{ url: image }} />}
       >
         <Post attributes={content.attributes} html={content.html} />
       </PostLayout>
-      <Head>
-        <title>{title}</title>
-        <meta property="og:image" content={image} />
-      </Head>
     </>
   );
 };
@@ -48,9 +44,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return data;
   })(require.context('../../content/posts', true, /\.md$/));
 
-  const paths = postSlugs.map((slug) => {
-    return `/blog/${slug}`;
-  });
+  const paths = postSlugs.map((slug) => `/blog/${slug}`);
 
   return {
     paths,

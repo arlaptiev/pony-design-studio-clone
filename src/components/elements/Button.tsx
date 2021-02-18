@@ -1,32 +1,16 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-import Spinner from 'components/icons/Spinner';
+type Props = {
+  href: string;
+  children: ReactNode;
+  className?: string;
+};
 
-interface ButtonProps {
-  title?: string;
-  isLoading?: boolean;
-}
-
-const Button = ({
-  isLoading = false,
-  title,
-  children,
-  ...buttonProps
-}: ButtonProps &
-React.ButtonHTMLAttributes<HTMLButtonElement>): JSX.Element => (
-  <button
-    type="button"
-    className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-royal-blue-600 hover:bg-royal-blue-500 focus:outline-none focus:border-royal-blue-700 focus:shadow-outline-royal-blue active:bg-royal-blue-700 transition duration-150 ease-in-out"
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    {...buttonProps}
+export const DarkButton = (props: Props) => (
+  <a
+    href={props.href}
+    className={`btn btn-blue-circle-animated mb-1 font-display bg-black text-white hover:bg-black hover:border-black ${props.className}`}
   >
-    {isLoading ? (
-      <Spinner width="20" fill="white" className="animate-spin" />
-    ) : (
-      title
-    )}
-    {children}
-  </button>
+    {props.children}
+  </a>
 );
-
-export default Button;

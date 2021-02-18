@@ -25,6 +25,6 @@ const CMS = dynamic(
   },
 );
 
-const AdminPage: React.FC = () => <CMS />
+const AdminPage: React.FC = () => <CMS />;
 
 export default AdminPage;

@@ -11,4 +11,4 @@ const CoverImage = (props: any) => (
   />
 );
 
-export default CoverImage; 
+export default CoverImage;

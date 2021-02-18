@@ -1,5 +1,6 @@
-import Home from 'components/templates/Home';
 import React, { ComponentType } from 'react';
+
+import Home from 'components/templates/Home';
 
 const HomePreview: ComponentType<any> = ({ entry }) => {
   const content = entry.get('data').toJS();

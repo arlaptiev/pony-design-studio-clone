@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-
 import Posts1 from './Posts1';
 import Posts2 from './Posts2';
 import Posts3 from './Posts3';

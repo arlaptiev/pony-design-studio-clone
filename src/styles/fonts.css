@@ -12,3 +12,10 @@
   font-weight: 400;
   font-display: fallback;
 }
+@font-face {
+  font-family: "neuzeit-grotesk";
+  src: url("/assets/fonts/Neuzeit Grotesk Bold.woff") format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+}

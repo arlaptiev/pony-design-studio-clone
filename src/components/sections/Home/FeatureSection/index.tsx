@@ -1,4 +1,5 @@
 import { Feature } from 'interfaces/home';
+
 import Features1 from './Features1';
 import Features2 from './Features2';
 import Features3 from './Features3';
@@ -37,7 +38,7 @@ const FeatureSection: React.FC<Props> = ({
             {description}
           </p>
           <div className="flex justify-center mt-6">
-            <div className="inline-flex w-16 h-1 bg-indigo-500 rounded-full"></div>
+            <div className="inline-flex w-16 h-1 bg-indigo-500 rounded-full" />
           </div>
         </div>
         <FeatureList features={features} />

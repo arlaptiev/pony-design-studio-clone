@@ -9,11 +9,10 @@
     "export": "next export -o dist",
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next dist",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ."
   },
   "dependencies": {
-    "caniuse-lite": "^1.0.30001185",
-    "image-size": "^0.9.3",
     "netlify-cms-app": "2.12.25",
     "next": "^10.0.4",
     "next-seo": "^4.17.0",

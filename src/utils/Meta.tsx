@@ -21,9 +21,8 @@ const defaultProps = {
   type: Config.content_type,
   image: Config.preview_image,
   locale: Config.locale,
-  site_name: Config.site_name
+  site_name: Config.site_name,
 };
-
 
 const Meta = (props: Props) => (
   <>

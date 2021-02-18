@@ -1,7 +1,8 @@
-import PostBody from "components/sections/Post/Body";
-import PostBreadcrumbs from "components/sections/Post/Breadcrumbs";
-import PostHeader from "components/sections/Post/Header";
-import React from "react"
+import React from 'react';
+
+import PostBody from 'components/sections/Post/Body';
+import PostBreadcrumbs from 'components/sections/Post/Breadcrumbs';
+import PostHeader from 'components/sections/Post/Header';
 
 export interface PostAttributes {
   title: string;
@@ -25,7 +26,7 @@ const Post = (props: Props) => (
   <>
     <div className="min-h-screen bg-gray-50">
 
-      <PostHeader title={props.attributes.title}/>
+      <PostHeader title={props.attributes.title} />
 
       <main className="-mt-32 mx-auto md:px-6 lg:px-32 pb-16">
         <div className="max-w-4xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
@@ -40,6 +41,6 @@ const Post = (props: Props) => (
       </main>
     </div>
   </>
-)
+);
 
-export default Post
+export default Post;

@@ -1,4 +1,5 @@
 import { Step } from 'interfaces/home';
+
 import Steps1 from './Steps1';
 import Steps2 from './Steps2';
 import Steps3 from './Steps3';

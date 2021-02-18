@@ -8,6 +8,6 @@ const PostHeader = (props: {title: string}) => (
       </div>
     </header>
   </div>
-)
+);
 
 export default PostHeader;

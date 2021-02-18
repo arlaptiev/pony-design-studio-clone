@@ -15,7 +15,7 @@ const Posts1: React.FC<{
               objectFit="cover"
               objectPosition="center"
               src={post.attributes.image}
-              alt="blog"   
+              alt="blog"
             />
           </div>
           <div className="p-6">
