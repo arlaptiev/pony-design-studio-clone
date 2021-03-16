@@ -39,7 +39,7 @@ const HeroSection = () => (
       <div className="mt-3 text-xs">Avg response time: 54 min</div>
     </div>
     <div className="max-w-4xl mt-30 m-auto">
-      <video className="intro-animation" autoPlay muted loop width="100%" preload="auto" src="https://pony.studio/assets/pony2@2x.mp4" />
+      <video className="intro-animation" autoPlay muted loop width="100%" preload="auto" src="/assets/img/pony.mp4" />
     </div>
   </section>
 );

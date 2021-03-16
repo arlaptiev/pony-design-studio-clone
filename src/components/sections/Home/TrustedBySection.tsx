@@ -9,8 +9,8 @@ const TrustedBySection = () => (
       <h4 className="text-white">
         Trusted by 150+ teams
       </h4>
-      <Slideshow isDirectionLeft={false} speedSeconds={700} image="https://pony.studio/assets/clients-slideshow-2@1x.png" />
-      <Slideshow isDirectionLeft={false} speedSeconds={400} image="https://pony.studio/assets/clients-slideshow-2@1x.png" />
+      <Slideshow isDirectionLeft={false} speedSeconds={700} image="/assets/img/clients-slideshow-1.png" />
+      <Slideshow isDirectionLeft={false} speedSeconds={400} image="/assets/img/clients-slideshow-2.png" />
     </DrawnDarkContainer>
   </section>
 );
